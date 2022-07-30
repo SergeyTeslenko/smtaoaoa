@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+
+body {
+    background-color: whitesmoke;
+}
+
+.header {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    font-size: 80px;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+}
+.header-title {
+    animation: jumpy 4s ease 0s infinite reverse;
+    animation-play-state: running;
+}
+
+.title-black {
+    position: relative;
+    top: 150px;
+    right: 5px;
+    z-index: 3;
+}
+
+.title-red {
+    position: relative;
+    color: red;
+    opacity: 0.5;
+    bottom: 100px;
+    left: 5px;
+    z-index: 2;
+    animation: jumpy 3s ease 0s infinite alternate;
+}
+.title-blue {
+    position: relative;
+    color: blue;
+    opacity: 0.5;
+    bottom: 242px;
+    left: 21px;
+    z-index: 1;
+    animation: jumpy 3s ease 1s infinite reverse;
+}
+.header-btn {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    display: block;
+    background-color: black;
+    color: whitesmoke;
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+    line-height: 45px;
+    text-align: center;
+    z-index: 3;
+}
+.header-btn:hover {
+    background-color: white;
+    border: 1px dashed #000;
+    color: #000;
+}
+.header a {
+    text-decoration: none;
+}
+.header-btn-blue {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(60%, 60%);
+    background-color: blue;
+    opacity: 0.5;
+    color: whitesmoke;
+    width: 300px;
+    height: 50px;   
+    padding: 5px;
+    z-index: 2;
+}
+.header-btn-red {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(40%, 40%);
+    background-color: red;
+    opacity: 0.5;
+    color: whitesmoke;
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+    z-index: 1;
+}
+/* 
+@keyframes jumpy {
+    0% {transform: translateY(0)};
+    
+    50% {transform: translateY(-200px)};
+
+    100% {transform: translateY(0)};
+} */
+
+@keyframes jumpy {
+    0%{
+        transform: translate(0,0);
+        
+    }
+    50%{
+        transform: translate(-20px,20px);
+        
+    }
+    100%{
+        transform: translate(0,0);
+        
+    }
+
+
+
+}
